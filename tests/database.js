@@ -17,10 +17,10 @@ class Connection {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-  }
+  } 
 
   async disconnect() {
-    await mongoose.disconnect();
+    await mongoose.disconnect();  
     await this.mongoServer.stop();
   }
 

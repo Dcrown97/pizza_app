@@ -13,7 +13,7 @@ app.use(express.json());
 // app.use(BasicAuth)
 
 // routes
-app.use('/orders', passport.authenticate('jwt', { session: false  }), OrderRouter)
+app.use('/orders', passport.authenticate('jwt', { session: false }), OrderRouter)
 app.use('/',  AuthRouter)
 
 // home route
